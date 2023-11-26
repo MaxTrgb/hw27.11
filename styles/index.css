@@ -1,5 +1,140 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    margin: 0 118px;
+}
+
 header {
-    width: 1440px;
+    width: 100%;
+    height: 124px;
+    background: #FFF;
+    box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.10);
+    position: fixed;
+    top: 0;
+}
+
+.header__lines {
+    display: flex;
+}
+
+.header_redLine {
+    width: 28%;
+    height: 8px;
+    flex-shrink: 0;
+    background: #E50050;
+}
+
+.header_greenLine {
+    width: 72%;
+    height: 8px;
+    flex-shrink: 0;
+    background: #4DAF8A;
+}
+
+.header__main {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 24px;
+}
+
+.logoOne {
+    width: 180px;
+    height: 78px;
+}
+
+
+.header__main_locaion {
+    display: flex;
+    width: 510px;
+}
+
+#locationIcon {
+    max-width: 32px;
+    min-width: 32px;
+    max-height: 32px;
+    min-height: 32px;
+}
+
+.header__main_locaion>div {
+    display: flex;
+    flex-direction: column;
+}
+
+.header__main_locaion>div>a:first-child {
+    color: #000;
+    font-family: Ubuntu;
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 1px;
+    margin-left: 13px;
+    text-decoration: none;
+}
+
+.header__main_locaion>div>a:last-child {
+    color: #E50050;
+    font-family: Roboto;
+    font-size: 13px;
+    font-weight: 400;
+    margin-left: 12px;
+
+}
+
+.header__main_number {
+    display: flex;
+    margin-left: 20px;
+    gap: 12px;
+    text-decoration: none;
+    color: #000;
+
+
+}
+
+#phoneIcon {
+    max-width: 32px;
+    min-width: 32px;
+    max-height: 32px;
+    min-height: 32px;
+}
+
+.header__main_number h3 {
+    font-family: Ubuntu;
+    font-size: 32px;
+    font-weight: 700;
+
+}
+
+.header__main_nav {
+    position: absolute;
+    bottom: 10px;
+    right: 0;
+}
+
+.header__main_nav ul {
+    display: flex;
+}
+
+.header__main_nav li {
+    list-style: none;
+    margin-left: 30px;
+}
+
+.header__main_nav a {
+    text-decoration: none;
+    color: #000;
+    font-family: Ubuntu;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+/* base */
+/* .header {
+    width: 100%;
     height: 124px;
     flex-shrink: 0;
     background: #FFF;
@@ -12,8 +147,10 @@ header {
 }
 
 .header__main {
-    width: 1440px;
+    width: 100%;
     height: 124px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .header__lines {
@@ -21,14 +158,14 @@ header {
 }
 
 .header_redLine {
-    width: 405px;
+    width: 28%;
     height: 8px;
     flex-shrink: 0;
     background: #E50050;
 }
 
 .header_greenLine {
-    width: 1036px;
+    width: 72%;
     height: 8px;
     flex-shrink: 0;
     background: #4DAF8A;
@@ -62,7 +199,6 @@ header {
 }
 
 .header__main_locaion {
-    margin: 25px 512px 1490px 463px;
     display: flex;
     flex-direction: column;
     text-decoration: none;
@@ -176,18 +312,20 @@ header {
     bottom: 12px;
     left: 1194px;
     position: absolute;
-}
+} */
 
 .hero__info_line {
-    width: 796.004px;
+    width: 100%;
     height: 1px;
     background: #D0D0D0;
+    margin-bottom: 16px;
 }
 
 .hero__info {
     display: flex;
     flex-direction: column;
     margin-left: 53px;
+    width: 100%;
 }
 
 .hero__info h1 {
@@ -197,8 +335,7 @@ header {
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-    margin-bottom: 0;
-    margin-top: 0;
+    margin-bottom: 4px;
 }
 
 .hero__info h3 {
@@ -208,12 +345,16 @@ header {
     font-style: normal;
     font-weight: 500;
     line-height: normal;
-    margin-top: 0;
+    margin-bottom: 18px;
+
 }
 
 .hero {
     display: flex;
-    margin: 8%;
+    margin-top: 184px;
+    margin-bottom: 74px;
+    /* width: 100%; */
+
 }
 
 .hero img {
@@ -225,7 +366,7 @@ header {
 }
 
 .hero__info_department {
-    width: 419px;
+    width: 400px;
     height: 53px;
     flex-shrink: 0;
     border-radius: 8px;
@@ -233,7 +374,8 @@ header {
     box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.10);
     display: flex;
     justify-content: space-between;
-    margin-top: 17px;
+    margin-bottom: 18px;
+    align-items: center;
 }
 
 .hero__info_department_logo {
@@ -251,6 +393,8 @@ header {
     width: 32px;
     height: 32px;
     flex-shrink: 0;
+    border-radius: 0;
+    background-color: #DDFFF3;
 }
 
 .hero__info_department h4 {
@@ -271,7 +415,7 @@ header {
 .doctor_info {
     display: flex;
     gap: 14px;
-
+    margin-bottom: 22px;
 }
 
 .doctor_info h2 {
@@ -314,12 +458,299 @@ header {
     text-decoration: none;
 }
 
-.same_doctors h2 {
+.same_doctors {
+    margin-bottom: 136px;
+}
+
+.same_doctors>h2 {
     color: #000;
     text-align: center;
     font-family: Ubuntu;
     font-size: 28px;
-    font-style: normal;
     font-weight: 700;
-    line-height: normal;
+    margin-bottom: 44px;
+}
+
+.same_doctors__cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.same_doctors__cards_card {
+    width: 286px;
+    height: 350px;
+    border-radius: 12px;
+    background: #32C190;
+    box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.25);
+    margin-bottom: 20px;
+    text-decoration: none;
+}
+
+.same_doctors__cards_card img {
+    border-top-right-radius: 12px;
+    border-top-left-radius: 12px;
+    margin-bottom: 16px;
+}
+
+.same_doctors__cards_card h5 {
+    color: #FFF;
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.same_doctors__cards_card h6 {
+    color: #FFF;
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 14px;
+    text-align: center;
+}
+
+
+
+
+footer {
+    background: #35C493;
+}
+
+.footer {
+    padding-top: 34px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 100px;
+}
+
+.footer__nav1,
+.footer__nav2 {
+    padding-top: 14px;
+    margin-bottom: 2px;
+}
+
+.footer__nav1 li,
+.footer__nav2 li {
+    list-style: none;
+    margin-bottom: 22px;
+    width: 190px;
+}
+
+.footer__nav1 a,
+.footer__nav2 a {
+    text-decoration: none;
+    color: #FFF;
+    font-family: Ubuntu;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.footer__socialMedia {
+    padding-top: 10px;
+}
+
+.footer__socialMedia>div {
+    display: flex;
+    gap: 10px;
+}
+
+.footer__socialMedia h6 {
+    color: #FFF;
+    font-family: Ubuntu;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.footer__socialMedia p {
+    color: #BFFADB;
+    font-family: Ubuntu;
+    font-size: 14px;
+    width: 180px;
+    margin-bottom: 14px;
+}
+
+.footer__line {
+    margin: 0 125px 30px 125px;
+    height: 1px;
+    background: rgba(255, 255, 255, 0.30);
+}
+
+.footer__underline {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 34px;
+}
+
+.footer__underline p {
+    color: #FFF;
+    font-family: Ubuntu;
+    font-size: 14px;
+    width: 520px;
+}
+
+
+
+@media screen and (max-width: 1200px) {
+
+    .container {
+        margin: 0 50px;
+    }
+
+    .header__main {
+        margin-top: 24px;
+    }
+
+    .hero {
+        margin-top: 184px;
+        margin-bottom: 74px;
+    }
+}
+
+
+
+@media screen and (max-width: 1030px) {
+
+    .footer,
+    .container {
+        margin: 0 10px;
+    }
+
+    .header__main {
+        margin-top: 24px;
+    }
+
+    .hero {
+        margin-top: 184px;
+        margin-bottom: 74px;
+    }
+}
+
+@media screen and (max-width: 940px) {
+    .footer,
+    .container {
+        margin: 0;
+    }
+
+    .header__main_locaion {
+        width: 300px;
+
+    }
+
+    .header__main {
+        margin-top: 24px;
+    }
+
+    .hero {
+        margin-top: 184px;
+        margin-bottom: 74px;
+    }
+    
+    
+	.hero__info,
+    .hero,
+	.footer,
+	.doctor__info,
+    .same_doctors__cards {
+		flex-direction: column;
+		align-items: center;
+		flex-wrap: nowrap;
+
+	}
+    
+    .same_doctors>h2 {
+        margin-bottom: 120px;
+    }
+	.same_doctors__cards_card {
+		transform: scale(1.5);
+		margin-bottom: 200px;
+        z-index: -10;
+	}
+
+	.hero>img {
+		transform: scale(1.5);
+		margin: 100px 0;
+        z-index: -10;
+
+	}
+
+    .footer__socialMedia>div {
+        justify-content: center;
+    }
+
+    .footer__socialMedia {
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 730px) {
+
+    header {
+        display: none;
+    }
+
+
+    
+    .same_doctors>h2 {
+        margin-bottom: 170px;
+    }
+	.same_doctors__cards_card {
+		transform: scale(1.9);
+		margin-bottom: 350px;
+        z-index: -10;
+	}
+
+	.hero>img {
+		transform: scale(1.9);
+		margin: 180px 0;
+        z-index: -10;
+
+	}
+
+}
+
+@media screen and (max-width: 630px) {
+
+
+    .same_doctors>h2 {
+        margin-bottom: 150px;
+    }
+	.same_doctors__cards_card {
+		transform: scale(1.7);
+		margin-bottom: 300px;
+        z-index: -10;
+	}
+
+	.hero>img {
+		transform: scale(1.5);
+		margin: 130px 0;
+        z-index: -10;
+
+	}
+
+}
+
+
+@media screen and (max-width: 500px) {
+
+    .same_doctors>h2 {
+        margin-bottom: 150px;
+    }
+	.same_doctors__cards_card {
+		transform: scale(1.2);
+		margin-bottom: 110px;
+        z-index: -10;
+	}
+
+	.hero>img {
+		transform: scale(1.0);
+		margin: 10px 0;
+        z-index: -10;
+
+	}
+    
+.hero__info_department {
+    width: 100px;
+}
 }

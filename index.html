@@ -14,35 +14,57 @@
 
 </head>
 
-<body>
-    <header class="header">
+<body>    
+    <header>
         <div class="header__lines">
             <div class="header_redLine"></div>
             <div class="header_greenLine"></div>
         </div>
-        <div class="header__main">
-            <a href=#>
-                <img id="logoOne" src="assets/logo.svg" alt="logo">
+        <div class="header__main container">
+            <a class="logoOne" href="#">
+                <img src="assets/logo.svg" alt="logo">
             </a>
-            <a href="https://www.google.com/maps/place/Ol'hy+Basarab+St,+15,+Stryi,+L'vivs'ka+oblast,+82401/@49.2665923,23.87411,17z/data=!3m1!4b1!4m6!3m5!1s0x473a699251572083:0xba705f0698fdb950!8m2!3d49.2665923!4d23.87411!16s%2Fg%2F11c43_25x9?entry=ttu"
-                class="header__main_locaion">
+
+            <div class="header__main_locaion">
                 <img id="locationIcon" src="assets/carbon_location-filled.svg" alt="locationIcon">
-                <h3>82400, Львівська обл., м. Стрий, вул. Ольги Басараб, буд. 15</h3>
-            </a>
-            <a href="#" id="schedule">графік роботи</a>
-            <a href="tel:+0324570302" class="header__main">
+                <div>
+                    <a href="https://maps.app.goo.gl/GUzq9jsSiFWibxi89" target="_blank" rel="noopener noreferrer">
+                        82400, Львівська обл., м. Стрий, вул. Ольги Басараб, буд. 15
+                    </a>
+                    <a href="#">графік роботи</a>
+                </div>
+            </div>
+
+            <a href="tel:(03245) 7-03-02" class="header__main_number">
                 <img id="phoneIcon" src="assets/el_phone-alt.svg" alt="phoneIcon">
-                <h2>(03245) 7-03-02</h2>
-            </a>            
-            <a class="header__main_navigation" id="registration" href="#">Реєстратура</a>
-            <a class="header__main_navigation" id="about" href="#">Про лікарню</a>
-            <a class="header__main_navigation" id="patient" href="#">Пацієнту</a>
-            <a class="header__main_navigation" id="rate" href="#">Оцініть роботу</a>
-            <a class="header__main_navigation" id="feedback" href="">Зворотній звʼязок</a>
+                <h2>
+                    (03245) 7-03-02
+                </h2>
+            </a>
+
+            <nav class="header__main_nav container">
+                <ul>
+                    <li>
+                        <a href="#">Реєстратура</a>
+                    </li>
+                    <li>
+                        <a href="#">Про лікарню</a>
+                    </li>
+                    <li>
+                        <a href="#">Пацієнту</a>
+                    </li>
+                    <li>
+                        <a href="#">Оцініть роботу</a>
+                    </li>
+                    <li>
+                        <a href="#">Зворотній звʼязок</a>
+                    </li>
+                </ul>
+            </nav>
         </div>
     </header>
     <main>
-        <section class="hero">
+        <section class="hero container">
             <img src="assets/5eda08da7492ea6fcde0aec01e5d26ea 2.png" alt="photo">
             <div class="hero__info">
                 <h1>Мицько Мар’яна Степанівна </h1>
@@ -73,21 +95,92 @@
                 <a href="#" class="hero__info_button">
                     ЗАписатись на прийом
                 </a>
-            </div>            
-        </section>
-        <section class="same_doctors">
+            </div>
+        </section>       
+        <section class="same_doctors container">
             <h2>Лікарі цієї ж спеціалізації</h2>
             <div class="same_doctors__cards">
-                <div class="same_doctors__cards_card">
-                    <img src="" alt="">
-                </div>
-                <div class="same_doctors__cards_card"></div>
-                <div class="same_doctors__cards_card"></div>
-                <div class="same_doctors__cards_card"></div>
+                <a href="#" class="same_doctors__cards_card">
+                    <img src="assets/c-0-f-9254-b-3-df-8-e-561-de-9-b-851-ac-91.png" alt="doctor-image">
+                    <h5>Мицько Мар’яна</h5>
+                    <h6>Лікар-невропатолог</h6>
+                </a>
+                <a href="#" class="same_doctors__cards_card">
+                    <img src="assets/c-0-f-9254-b-3-df-8-e-561-de-9-b-851-ac-91.png" alt="doctor-image">
+                    <h5>Мицько Мар’яна</h5>
+                    <h6>Лікар-невропатолог</h6>
+                </a>
+                <a href="#" class="same_doctors__cards_card">
+                    <img src="assets/c-0-f-9254-b-3-df-8-e-561-de-9-b-851-ac-91.png" alt="doctor-image">
+                    <h5>Мицько Мар’яна</h5>
+                    <h6>Лікар-невропатолог</h6>
+                </a>
+                <a href="#" class="same_doctors__cards_card">
+                    <img src="assets/c-0-f-9254-b-3-df-8-e-561-de-9-b-851-ac-91.png" alt="doctor-image">
+                    <h5>Мицько Мар’яна</h5>
+                    <h6>Лікар-невропатолог</h6>
+                </a>
             </div>
         </section>
     </main>
-
+    <footer>
+        <div class="footer">
+            <a class="footer__logo" href="#">
+                <img src="assets/footer-logo.svg" alt="footer-logo">
+            </a>
+            <nav class="footer__nav1">
+                <ul>
+                    <li>
+                        <a href="#">Підрозділи</a>
+                    </li>
+                    <li>
+                        <a href="#">Графіки роботи</a>
+                    </li>
+                    <li>
+                        <a href="#">Декларація з лікарем</a>
+                    </li>
+                    <li>
+                        <a href="#">Доступні ліки</a>
+                    </li>
+                    <li>
+                        <a href="#">Про поліклініку</a>
+                    </li>
+                </ul>
+            </nav>
+            <nav class="footer__nav2">
+                <ul>
+                    <li>
+                        <a href="#">Публічні закупівлі</a>
+                    </li>
+                    <li>
+                        <a href="#">Профспілка медичних працівників</a>
+                    </li>
+                    <li>
+                        <a href="#">Міські цільові соціальні програми</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="footer__socialMedia">
+                <h6>Тримайте руку на пульсі</h6>
+                <p>слідкуйте за оновленнями в соц. мережах</p>
+                <div>
+                    <a href="http://facebook.com" target="_blank" rel="noopener noreferrer">
+                        <img src="assets/bi-facebook.svg" alt="facebook-icon">
+                    </a>
+                    <a href="http://telegram.org" target="_blank" rel="noopener noreferrer">
+                        <img src="assets/akar-icons-telegram-fill.svg" alt="telegram-icon">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer__line"></div>
+        <div class="footer__underline">
+            <p>
+                © 2023 комунального некомерційного підприємства Стрийської міської ради
+                Використання матеріалів сайту дозволяється лише з посиланням на джерело
+            </p>
+        </div>
+    </footer>
 </body>
 
 </html>
