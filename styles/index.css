@@ -7,6 +7,13 @@ header {
     position: relative;
     display: flex;
     flex-direction: column;
+    margin-bottom: 46px;
+
+}
+
+.header__main {
+    width: 1440px;
+    height: 124px;
 }
 
 .header__lines {
@@ -38,6 +45,11 @@ header {
     position: absolute;
 }
 
+#logoOne a {
+    text-decoration: none;
+
+}
+
 #locationIcon {
     width: 32px;
     height: 32px;
@@ -53,6 +65,7 @@ header {
     margin: 25px 512px 1490px 463px;
     display: flex;
     flex-direction: column;
+    text-decoration: none;
 }
 
 .header__main_locaion h3 {
@@ -65,10 +78,9 @@ header {
     line-height: normal;
     display: flex;
     flex-direction: column;
-
 }
 
-.header__main_locaion a {
+#schedule {
     width: 143px;
     height: 12px;
     flex-shrink: 0;
@@ -82,8 +94,8 @@ header {
     top: 56px;
     right: 835px;
     bottom: 56px;
-    left: 460px;
-
+    left: 461px;
+    position: absolute;
 }
 
 #phoneIcon {
@@ -111,6 +123,11 @@ header {
     position: absolute;
 }
 
+.header__main a {
+    text-decoration: none;
+}
+
+
 .header__main_navigation {
     color: #000;
     font-family: Ubuntu;
@@ -120,38 +137,189 @@ header {
     line-height: normal;
     text-decoration: none;
 }
-#registration{
+
+#registration {
     top: 96px;
     right: 617px;
     bottom: 12px;
     left: 736px;
     position: absolute;
 }
-#about{
+
+#about {
     top: 96px;
     right: 498px;
     bottom: 12px;
     left: 853px;
     position: absolute;
 }
-#patient{
+
+#patient {
     top: 96px;
     right: 406px;
     bottom: 12px;
     left: 972px;
     position: absolute;
 }
-#rate{
+
+#rate {
     top: 96px;
     right: 271px;
     bottom: 12px;
     left: 1064px;
     position: absolute;
 }
-#feedback{
+
+#feedback {
     top: 96px;
     right: 121px;
     bottom: 12px;
     left: 1194px;
     position: absolute;
+}
+
+.hero__info_line {
+    width: 796.004px;
+    height: 1px;
+    background: #D0D0D0;
+}
+
+.hero__info {
+    display: flex;
+    flex-direction: column;
+    margin-left: 53px;
+}
+
+.hero__info h1 {
+    color: #35C493;
+    font-family: Ubuntu;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.hero__info h3 {
+    color: #000;
+    font-family: Ubuntu;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-top: 0;
+}
+
+.hero {
+    display: flex;
+    margin: 8%;
+}
+
+.hero img {
+    width: 354px;
+    height: 375px;
+    flex-shrink: 0;
+    border-radius: 12px;
+    background: url(<path-to-image>), lightgray 0px -95.999px / 100% 145.084% no-repeat;
+}
+
+.hero__info_department {
+    width: 419px;
+    height: 53px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    background: #FFF;
+    box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.10);
+    display: flex;
+    justify-content: space-between;
+    margin-top: 17px;
+}
+
+.hero__info_department_logo {
+    width: 59px;
+    height: 55px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    background: #DDFFF3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero__info_department_logo img {
+    width: 32px;
+    height: 32px;
+    flex-shrink: 0;
+}
+
+.hero__info_department h4 {
+    display: flex;
+    width: 323px;
+    height: 16px;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+    color: #000;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.doctor_info {
+    display: flex;
+    gap: 14px;
+
+}
+
+.doctor_info h2 {
+    color: #000;
+    font-family: Ubuntu;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.doctor_info p {
+    color: #000;
+    font-family: Ubuntu;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.hero__info_button {
+    width: 251px;
+    height: 46px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    background: #E50050;
+    box-shadow: 0px 10px 22px 0px rgba(0, 0, 0, 0.15);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+    text-align: center;
+    font-feature-settings: 'cpsp' on;
+    font-family: Ubuntu;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.same_doctors h2 {
+    color: #000;
+    text-align: center;
+    font-family: Ubuntu;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
 }

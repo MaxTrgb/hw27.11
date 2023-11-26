@@ -11,34 +11,83 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
         rel="stylesheet">
+
 </head>
 
 <body>
-    <main>
-        <header class="header">
-            <div class="header__lines">
-                <div class="header_redLine"></div>
-                <div class="header_greenLine"></div>
-            </div>
-            <div class="header__main">
+    <header class="header">
+        <div class="header__lines">
+            <div class="header_redLine"></div>
+            <div class="header_greenLine"></div>
+        </div>
+        <div class="header__main">
+            <a href=#>
                 <img id="logoOne" src="assets/logo.svg" alt="logo">
-                <div class="header__main_locaion">
-                    <img id="locationIcon" src="assets/carbon_location-filled.svg" alt="locationIcon">
-                    <h3>82400, Львівська обл., м. Стрий, вул. Ольги Басараб, буд. 15
-                        <a href="#">графік роботи</a>
-                    </h3>
-                </div>
+            </a>
+            <a href="https://www.google.com/maps/place/Ol'hy+Basarab+St,+15,+Stryi,+L'vivs'ka+oblast,+82401/@49.2665923,23.87411,17z/data=!3m1!4b1!4m6!3m5!1s0x473a699251572083:0xba705f0698fdb950!8m2!3d49.2665923!4d23.87411!16s%2Fg%2F11c43_25x9?entry=ttu"
+                class="header__main_locaion">
+                <img id="locationIcon" src="assets/carbon_location-filled.svg" alt="locationIcon">
+                <h3>82400, Львівська обл., м. Стрий, вул. Ольги Басараб, буд. 15</h3>
+            </a>
+            <a href="#" id="schedule">графік роботи</a>
+            <a href="tel:+0324570302" class="header__main">
                 <img id="phoneIcon" src="assets/el_phone-alt.svg" alt="phoneIcon">
                 <h2>(03245) 7-03-02</h2>
-                <a class="header__main_navigation" id="registration" href="#">Реєстратура</a>
-                <a class="header__main_navigation" id="about" href="#">Про лікарню</a>
-                <a class="header__main_navigation" id="patient" href="#">Пацієнту</a>
-                <a class="header__main_navigation" id="rate" href="#">Оцініть роботу</a>
-                <a class="header__main_navigation" id="feedback" href="">Зворотній звʼязок</a>
-            </div>           
-        </header>
-        
+            </a>            
+            <a class="header__main_navigation" id="registration" href="#">Реєстратура</a>
+            <a class="header__main_navigation" id="about" href="#">Про лікарню</a>
+            <a class="header__main_navigation" id="patient" href="#">Пацієнту</a>
+            <a class="header__main_navigation" id="rate" href="#">Оцініть роботу</a>
+            <a class="header__main_navigation" id="feedback" href="">Зворотній звʼязок</a>
+        </div>
+    </header>
+    <main>
+        <section class="hero">
+            <img src="assets/5eda08da7492ea6fcde0aec01e5d26ea 2.png" alt="photo">
+            <div class="hero__info">
+                <h1>Мицько Мар’яна Степанівна </h1>
+                <h3>Лікар-невропатолог</h3>
+                <div class="hero__info_line"></div>
+                <div class="hero__info_department">
+                    <div class="hero__info_department_logo">
+                        <img src="assets/star 1.png" alt="">
+                    </div>
+                    <h4> Відділення невідкладної (екстреної) медичної допомоги </h4>
+                </div>
+                <div class="doctor_info">
+                    <h2>Кабінет:</h2>
+                    <p>407</p>
+                </div>
+                <div class="doctor_info">
+                    <h2>Категорія:</h2>
+                    <p>вища </p>
+                </div>
+                <div class="doctor_info">
+                    <h2>Освіта:</h2>
+                    <p>Закінчила Львівський ДМУ ім.Д.Галицького у 2000 році</p>
+                </div>
+                <div class="doctor_info">
+                    <h2>Стаж:</h2>
+                    <p>20 років</p>
+                </div>
+                <a href="#" class="hero__info_button">
+                    ЗАписатись на прийом
+                </a>
+            </div>            
+        </section>
+        <section class="same_doctors">
+            <h2>Лікарі цієї ж спеціалізації</h2>
+            <div class="same_doctors__cards">
+                <div class="same_doctors__cards_card">
+                    <img src="" alt="">
+                </div>
+                <div class="same_doctors__cards_card"></div>
+                <div class="same_doctors__cards_card"></div>
+                <div class="same_doctors__cards_card"></div>
+            </div>
+        </section>
     </main>
+
 </body>
 
 </html>
