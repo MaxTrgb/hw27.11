@@ -524,21 +524,21 @@ footer {
     margin: 0 100px;
 }
 
-.footer__nav1,
-.footer__nav2 {
+.footer__navigation1,
+.footer__navigation2 {
     padding-top: 14px;
     margin-bottom: 2px;
 }
 
-.footer__nav1 li,
-.footer__nav2 li {
+.footer__navigation1 li,
+.footer__navigation2 li {
     list-style: none;
     margin-bottom: 22px;
     width: 190px;
 }
 
-.footer__nav1 a,
-.footer__nav2 a {
+.footer__navigation1 a,
+.footer__navigation2 a {
     text-decoration: none;
     color: #FFF;
     font-family: Ubuntu;
